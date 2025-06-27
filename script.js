@@ -6,5 +6,11 @@ const botonEnter = document.querySelector('#boton-enter')
 // funcion agregar tarea
 
 function agregarTarea(tarea){
-    
+    const elemento = `<li>
+                    <i class="far fa-circle co" data="realizado" id="0"></i>
+                    <p class="text">${tarea}</p>
+                    <i class="fas fa-trash de" data="eliminado" id="0"></i> 
+                </li>`
+    lista.insertAdjacentElement("beforeend",elemento)
 }
+
